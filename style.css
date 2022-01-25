@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif ;
+}
+main{
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 280px;
+    height: 450px;
+    background-color:hsl(216, 50%, 16%) ;
+    border-radius:20px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    box-shadow: 3px 11px 10px 12px hsl(216, 63%, 6%);
+
+}
+.img{
+    height: 233px;
+    width: 233px;
+    display: block;
+    transition: .5s ease;
+    background-color: cyan;
+    border-radius: 12px;
+    backface-visibility: hidden;
+    transition: .5s ease; 
+}
+.img img{
+    height: 235px;
+    width: 235px;
+    border-radius: 10px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    opacity: 1;
+}
+.cnt{
+    height: 180px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.h1{
+    width: 90%;
+    height: 30px;
+    margin: auto;
+}
+.h1 h1{
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+.h1 h1:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.p{
+    width: 98%;
+    /* text-align: justify; */
+    padding-left:10px;
+    margin-top: 3px;
+    font-size: 15px;
+    font-weight: 300;
+    color:hsl(215, 51%, 70%) ;
+}
+.third{
+    width: 95%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    font-size: 15px;
+    font-weight: 300;
+}
+svg{
+    margin-right: 3px;
+}
+.third p{
+    display: flex;
+    align-items: center;
+}
+.hr{
+    width: 90%;
+    margin:5px auto;
+    color:hsl(215, 32%, 27%);
+}
+.fourth{
+    width: 90%;
+    height: 45px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.fourth img{
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.names{
+    color:hsl(0, 0%, 100%);
+    font-size: 15px;
+    font-weight: 400;
+}
+.names:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .img:hover img {
+    opacity: 0.6;
+  }
+  
+  .img:hover .middle {
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .text {
+    color: white;
+  }
